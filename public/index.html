@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bloatware Remover Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section (Minimal) -->
+    <div class="hero">
+        <button id="guideToggleBtn" class="guide-button">
+            <i class="fas fa-question-circle"></i> Quick Guide
+        </button>
+        <h1>Bloatware Remover Tool</h1>
+        <p>Remove unwanted system apps safely</p>
+    </div>
+     <!-- Guide Overlay (Hidden by default) -->
+     <div id="guideOverlay" class="overlay">
+        <div class="overlay-content">
+            <h2><i class="fas fa-book"></i> How to Use</h2>
+            <ul class="guide-steps">
+                <li>
+                    <i class="fas fa-usb"></i>
+                    <strong>Connect Device</strong>
+                    <p>Enable USB debugging in Developer Options</p>
+                </li>
+                <li>
+                    <i class="fas fa-filter"></i>
+                    <strong>Filter Apps</strong>
+                    <p>Use the buttons to switch between app types</p>
+                </li>
+                <li>
+                    <i class="fas fa-trash-alt"></i>
+                    <strong>Uninstall Safely</strong>
+                    <p>Critical system apps are protected</p>
+                </li>
+            </ul>
+            <button id="closeGuideBtn" class="close-button">
+                <i class="fas fa-times"></i> Close
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>📱 Bloatware Remover</h1>
+        
+        <!-- Connection Status -->
+        <div id="connectionStatus">🔴 Disconnected</div>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button id="showAll" class="active">All Apps</button>
+            <button id="showSystem">System Apps</button>
+            <button id="showUser">User Apps</button>
+        </div>
+        
+        <!-- Search Box -->
+        <input type="text" id="searchBox" placeholder="🔍 Search packages...">
+        
+        <!-- Package List -->
+        <div id="packageList" class="package-grid"></div>
+        
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <input type="text" id="packageInput" placeholder="com.example.package">
+            <button id="uninstallBtn" class="danger">🗑️ Uninstall</button>
+            <button id="reinstallBtn" class="success">↩️ Reinstall Last</button>
+        </div>
+        
+        <!-- Output Console -->
+        <div class="output-terminal">
+            <pre id="output">>> Connect device via USB and click a filter button</pre>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
