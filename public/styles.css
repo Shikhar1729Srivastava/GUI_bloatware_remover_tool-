@@ -237,7 +237,7 @@ button:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* (Keep all your existing tool styles below) */
+
 
 /* ===== TOOL CONTAINER ===== */
 .container {
@@ -248,5 +248,3 @@ button:hover {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
-
-/* (Keep all other CSS styles from the previous version) */
